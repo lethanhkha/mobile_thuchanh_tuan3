@@ -1,11 +1,11 @@
- 
 import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, StyleSheet, Text } from 'react-native';
 
 import { CounterScreen, FullNameScreen } from './src/components/Section1';
 import { TimerScreen, ConnectionScreen } from './src/components/Section2';
 import { ThemeScreen, ProfileScreen } from './src/components/Section3';
-import { CartScreen, LoginScreen } from './src/components/Section4'; // IMPORT THÊM
+import { CartScreen, LoginScreen } from './src/components/Section4';
+import { ProductSearchScreen } from './src/components/Section5'; // IMPORT THÊM 3.1.5
 import { ThemeContext, UserContext } from './src/contexts/MyContext';
 
 export default function App() {
@@ -27,12 +27,17 @@ export default function App() {
             
             <CounterScreen />
             <FullNameScreen />
+
             <TimerScreen />
             <ConnectionScreen />
+
             <ThemeScreen />
             <ProfileScreen />
+
             <CartScreen />
             <LoginScreen />
+
+            <ProductSearchScreen />
             
           </ScrollView>
         </SafeAreaView>
