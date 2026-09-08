@@ -14,8 +14,8 @@ export default function App() {
   const toggleTheme = () => setIsDarkMode(previousMode => !previousMode);
 
   const [user, setUser] = useState({
-    name: 'Nguyễn Văn An',
-    email: 'an.nguyen@example.com',
+    name: 'Lê Thanh Kha',
+    email: 'kha.le@example.com',
     avatar: 'https://cdn-icons-png.flaticon.com/512/149/149071.png'
   });
   const logout = () => setUser(null);
