@@ -1,20 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { CounterScreen, FullNameScreen } from './src/components/Section1';
+
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView styles={styles.main}>
+      <ScrollView contentContainerStyle={styles.scrollContent}>
+        <CounterScreen />
+        <FullNameScreen />
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  main: { flex: 1, backgroundColor: '#f0f0f0' },
+  scrollContent: { padding: 16 },
 });
