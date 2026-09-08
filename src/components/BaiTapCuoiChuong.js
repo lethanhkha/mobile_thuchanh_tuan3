@@ -38,6 +38,7 @@ const TodoItem = memo(function TodoItem({ item, onToggle, onDelete, isDarkMode }
   );
 });
 
+// 3. Component chính
 export function TodoApp() {
   const { isDarkMode, toggleTheme } = useContext(ThemeContext);
 
