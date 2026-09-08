@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { CounterScreen, FullNameScreen } from './src/components/Section1';
+import { ConnectionScreen, TimerScreen } from './src/components/Section2';
 
 
 
@@ -10,6 +11,8 @@ export default function App() {
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <CounterScreen />
         <FullNameScreen />
+        <TimerScreen />
+        <ConnectionScreen />
       </ScrollView>
     </SafeAreaView>
   );
